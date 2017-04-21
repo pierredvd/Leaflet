@@ -192,6 +192,8 @@ export var Canvas = Renderer.extend({
 				dashArray.push(Number(parts[i]));
 			}
 			layer.options._dashArray = dashArray;
+		} else {
+			layer.options._dashArray = false;
 		}
 	},
 
